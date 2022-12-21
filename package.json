@@ -4,7 +4,7 @@
   "description": "challenge_14",
   "main": "app.js",
   "scripts": {
-    "start": "0X app.js",
+    "start": "node app.js",
     "test": "node benchmark.js",
     "dev": "./node_modules/nodemon/bin/nodemon.js --exec 'node -r dotenv/config' ./app.js"
   },
