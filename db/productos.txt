@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Zapatos",
+    "price": 470,
+    "thumbnail": "https://loremflickr.com/640/480"
+  },
+  {
+    "id": 2,
+    "title": "Sopa",
+    "price": 312,
+    "thumbnail": "https://loremflickr.com/640/480"
+  },
+  {
+    "id": 3,
+    "title": "Gorro",
+    "price": 901,
+    "thumbnail": "https://loremflickr.com/640/480"
+  },
+  {
+    "id": 4,
+    "title": "Bicicleta",
+    "price": 815,
+    "thumbnail": "https://loremflickr.com/640/480"
+  },
+  {
+    "id": 5,
+    "title": "Ordenador",
+    "price": 782,
+    "thumbnail": "https://loremflickr.com/640/480"
+  },
+  {
+    "title": "regla",
+    "price": "100",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-512.png",
+    "id": 6
+  },
+  {
+    "id": 1,
+    "title": "Pelota",
+    "price": 647,
+    "thumbnail": "https://loremflickr.com/640/480"
+  },
+  {
+    "id": 2,
+    "title": "Atún",
+    "price": 468,
+    "thumbnail": "https://loremflickr.com/640/480"
+  },
+  {
+    "id": 3,
+    "title": "Pizza",
+    "price": 174,
+    "thumbnail": "https://loremflickr.com/640/480"
+  },
+  {
+    "id": 4,
+    "title": "Guantes",
+    "price": 777,
+    "thumbnail": "https://loremflickr.com/640/480"
+  },
+  {
+    "id": 5,
+    "title": "Raton",
+    "price": 712,
+    "thumbnail": "https://loremflickr.com/640/480"
+  }
+]

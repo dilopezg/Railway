@@ -1,0 +1,69 @@
+<div class="container mt-3">
+        <div class="jumbotron">
+
+            
+            <h1>Bienvenid@ {{user}}</h1>
+            <div >
+            <form action="/logout" method="POST">
+            <button class='btn btn-outline-dark'>Logout</button>
+            <input type="hidden" name="username" value="{{user}}"></form>
+            </div>
+                                
+            <h1>Ingrese Producto</h1>
+            <br>
+
+            <form id="form-Product">
+                <!-- Campo nombre del producto -->
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" class="form-control" type="text" name="title" required>
+                </div>
+
+                <!-- Campo precio del producto -->
+                <div class="form-group">
+                    <label for="precio">Precio</label>
+                    <input id="precio" class="form-control" type="number" step="0.5" name="price" required>
+                </div>
+
+                <!-- Campo url de la foto del producto -->
+                <div class="form-group">
+                    <label for="foto">Foto URL</label>
+                    <input id="foto" class="form-control" type="url" name="thumbnail">
+                </div>
+
+                <!-- Botón de envío -->
+                <button class="btn btn-success mt-3">Enviar</button>
+            </form>
+            <hr>
+            <button class="btn btn-info mt-3" onclick="location.href = '/productos-test'">Test productos</button>
+            <br>
+            <div id="datos"></div>
+            <br>
+
+            <h1>Centro de Mensajes</h1>
+            <h3 class="col-md-4" id="titulo-compresion"></h3>
+
+            <ul id="list-messages">
+
+            </ul>
+            <form id="form-message">
+                <input class="form-control" type="text" name="email" id="input-email" placeholder="Ingresa tu email"
+                    required>
+                <input class="form-control" type="text" name="name" id="input-name" placeholder="Ingresa tu nombre"
+                    required>
+                <input class="form-control" type="text" name="lastname" id="input-lastname"
+                    placeholder="Ingresa tu apellido" required>
+                <input class="form-control" type="text" name="age" id="input-age" placeholder="Ingresa tu edad"
+                    required>
+                <input class="form-control" type="text" name="user" id="input-user" placeholder="Ingresa tu usuario"
+                    required>
+                <input class="form-control" type="text" name="avatar" id="input-avatar"
+                    placeholder="Ingresa avatar (url)" required>
+                <input class="form-control" type="text" name="message" id="input-message"
+                    placeholder="Ingresa mensaje..." required>
+                <button type="submit" onclick="document.forms.Contacto.submit();"><a onClick="show()">Enviar</button>
+            </form>
+        </div>
+</div>
+<script src="C:\Users\carlo\OneDrive\Documents\JS-Basic\Challenge_14\public\js\handlebars-v4.7.6.js"></script>
+<script src="C:\Users\carlo\OneDrive\Documents\JS-Basic\Challenge_14\public\js\main.js"></script>

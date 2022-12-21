@@ -1,0 +1,110 @@
+[
+  {
+    "author": {
+      "email": "Usuario@coderhouse",
+      "name": "Usuario",
+      "lastname": "Coderhouse",
+      "age": 25,
+      "alias": "Usercoder",
+      "avatar": "https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_female4-64.png"
+    },
+    "message": "Bienvenido",
+    "time": "10/11/2022, 5:10:58 PM"
+  },
+  {
+    "author": {
+      "email": "dilialopezg@gmail.com",
+      "name": "dilia",
+      "lastname": "lopez",
+      "age": "30",
+      "alias": "dilopezg",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-64.png"
+    },
+    "message": "Hola a todos",
+    "time": "11/16/2022, 9:33:24 AM"
+  },
+  {
+    "author": {
+      "email": "dilialopezg@gmail.com",
+      "name": "dilia",
+      "lastname": "lopez",
+      "age": "30",
+      "alias": "dilopezg",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-64.png"
+    },
+    "message": "Como estan?",
+    "time": "11/16/2022, 9:33:44 AM"
+  },
+  {
+    "author": {
+      "email": "dilialopezg@gmail.com",
+      "name": "dilia",
+      "lastname": "lopez",
+      "age": "30",
+      "alias": "dilopezg",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-64.png"
+    },
+    "message": "Buena clase",
+    "time": "11/16/2022, 9:33:56 AM"
+  },
+  {
+    "author": {
+      "email": "dilialopezg@gmail.com",
+      "name": "dilia",
+      "lastname": "lopez",
+      "age": "30",
+      "alias": "dilopezg",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-64.png"
+    },
+    "message": "Hola del otro lado",
+    "time": "11/16/2022, 9:34:11 AM"
+  },
+  {
+    "author": {
+      "email": "dilialopezg@gmail.com",
+      "name": "dilia",
+      "lastname": "lopez",
+      "age": "30",
+      "alias": "dilopezg",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-64.png"
+    },
+    "message": "Como estan del otro lado?",
+    "time": "11/16/2022, 9:34:34 AM"
+  },
+  {
+    "author": {
+      "email": "dilialopezg@gmail.com",
+      "name": "dilia",
+      "lastname": "lopez",
+      "age": "30",
+      "alias": "dilopezg",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-64.png"
+    },
+    "message": "muy bien del otro lado",
+    "time": "11/16/2022, 9:34:52 AM"
+  },
+  {
+    "author": {
+      "email": "dilialopezg@coderhouse.com",
+      "name": "dilia",
+      "lastname": "lopez",
+      "age": "30",
+      "alias": "dilopezg",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-64.png"
+    },
+    "message": "buenas tardes",
+    "time": "11/23/2022, 4:50:34 PM"
+  },
+  {
+    "author": {
+      "email": "dilialopezg@coderhouse.com",
+      "name": "dilia",
+      "lastname": "lopez",
+      "age": "30",
+      "alias": "dilopezg",
+      "avatar": "https://cdn1.iconfinder.com/data/icons/user-avatar-20/64/51-woman-64.png"
+    },
+    "message": "como estan?",
+    "time": "11/23/2022, 4:50:56 PM"
+  }
+]

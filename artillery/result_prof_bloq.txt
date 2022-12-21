@@ -1,0 +1,1150 @@
+Statistical profiling result from bloq_v8.log, (8612 ticks, 4 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   5052   58.7%          /usr/bin/node
+    126    1.5%          /usr/lib/x86_64-linux-gnu/libc-2.31.so
+     82    1.0%          [vdso]
+      8    0.1%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     25    0.3%    0.7%  LazyCompile: *resolve path.js:1067:10
+     21    0.2%    0.6%  LazyCompile: *readPackage internal/modules/cjs/loader.js:258:21
+     13    0.2%    0.4%  LazyCompile: *next /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:177:16
+      8    0.1%    0.2%  LazyCompile: *realpathSync fs.js:1723:22
+      7    0.1%    0.2%  LazyCompile: *Module._nodeModulePaths internal/modules/cjs/loader.js:597:37
+      4    0.0%    0.1%  LazyCompile: *normalizeString path.js:59:25
+      4    0.0%    0.1%  LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      3    0.0%    0.1%  LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      2    0.0%    0.1%  LazyCompile: *readFileSync fs.js:391:22
+      2    0.0%    0.1%  LazyCompile: *basename path.js:1278:11
+      2    0.0%    0.1%  LazyCompile: *Module._resolveLookupPaths internal/modules/cjs/loader.js:635:38
+      1    0.0%    0.0%  RegExp: ^xterm-256
+      1    0.0%    0.0%  RegExp: \x20{2}
+      1    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.0%  RegExp: ["'&<>]
+      1    0.0%    0.0%  LazyCompile: *validateString internal/validators.js:122:24
+      1    0.0%    0.0%  LazyCompile: *nextTick internal/process/task_queues.js:103:18
+      1    0.0%    0.0%  LazyCompile: *get data /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express-session/session/cookie.js:117:11
+      1    0.0%    0.0%  LazyCompile: *emit events.js:349:44
+      1    0.0%    0.0%  LazyCompile: *dirname path.js:1247:10
+      1    0.0%    0.0%  LazyCompile: *cleanup /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/ee-first/index.js:58:19
+      1    0.0%    0.0%  LazyCompile: *Readable.removeListener internal/streams/readable.js:881:45
+      1    0.0%    0.0%  LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+
+ [C++]:
+   ticks  total  nonlib   name
+   1480   17.2%   44.3%  __xstat
+    800    9.3%   23.9%  __lxstat
+    380    4.4%   11.4%  __libc_open
+    157    1.8%    4.7%  __write
+    139    1.6%    4.2%  __lll_lock_wait
+     46    0.5%    1.4%  _IO_fwrite
+     45    0.5%    1.3%  __libc_read
+     34    0.4%    1.0%  __libc_malloc
+     22    0.3%    0.7%  __fxstat
+     16    0.2%    0.5%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+     13    0.2%    0.4%  do_futex_wait.constprop.0
+     13    0.2%    0.4%  __mprotect
+     12    0.1%    0.4%  _IO_file_xsputn
+     11    0.1%    0.3%  __libc_free
+      8    0.1%    0.2%  __pthread_cond_timedwait
+      7    0.1%    0.2%  operator new(unsigned long)
+      6    0.1%    0.2%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      5    0.1%    0.1%  __GI___pthread_mutex_unlock
+      4    0.0%    0.1%  std::ostream::sentry::sentry(std::ostream&)
+      4    0.0%    0.1%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      3    0.0%    0.1%  std::ostream::flush()
+      3    0.0%    0.1%  operator delete(void*)
+      2    0.0%    0.1%  __pthread_cond_signal
+      2    0.0%    0.1%  __madvise
+      2    0.0%    0.1%  __errno_location
+      2    0.0%    0.1%  __clock_gettime
+      2    0.0%    0.1%  __GI___pthread_mutex_lock
+      2    0.0%    0.1%  _IO_file_write
+      2    0.0%    0.1%  _IO_fflush
+      1    0.0%    0.0%  std::ostream::operator<<(int)
+      1    0.0%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.0%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+      1    0.0%    0.0%  shutdown
+      1    0.0%    0.0%  operator new[](unsigned long)
+      1    0.0%    0.0%  operator delete[](void*)
+      1    0.0%    0.0%  epoll_pwait
+      1    0.0%    0.0%  epoll_ctl
+      1    0.0%    0.0%  brk
+      1    0.0%    0.0%  __pthread_cond_broadcast
+      1    0.0%    0.0%  __mmap
+      1    0.0%    0.0%  __libc_write
+      1    0.0%    0.0%  __GI___pthread_getspecific
+      1    0.0%    0.0%  _IO_do_write
+
+ [Summary]:
+   ticks  total  nonlib   name
+    103    1.2%    3.1%  JavaScript
+   3237   37.6%   96.8%  C++
+    334    3.9%   10.0%  GC
+   5268   61.2%          Shared libraries
+      4    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   1480   49.1%   17.2%  __xstat
+    800   26.5%    9.3%  __lxstat
+    380   12.6%    4.4%  __libc_open
+    123    4.1%    1.4%  __write
+     45    1.5%    0.5%  _IO_fwrite
+     36    1.2%    0.4%  __libc_read
+     34    1.1%    0.4%  __libc_malloc
+     22    0.7%    0.3%  __fxstat
+     16    0.5%    0.2%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+     12    0.4%    0.1%  _IO_file_xsputn
+     11    0.4%    0.1%  __lll_lock_wait
+     11    0.4%    0.1%  __libc_free
+      7    0.2%    0.1%  operator new(unsigned long)
+      6    0.2%    0.1%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      4    0.1%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      4    0.1%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+      3    0.1%    0.0%  operator delete(void*)
+      3    0.1%    0.0%  __mprotect
+      2    0.1%    0.0%  std::ostream::flush()
+      2    0.1%    0.0%  __errno_location
+      2    0.1%    0.0%  __clock_gettime
+      2    0.1%    0.0%  __GI___pthread_mutex_lock
+      1    0.0%    0.0%  std::ostream::operator<<(int)
+      1    0.0%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.0%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)
+      1    0.0%    0.0%  operator new[](unsigned long)
+      1    0.0%    0.0%  operator delete[](void*)
+      1    0.0%    0.0%  brk
+      1    0.0%    0.0%  __mmap
+      1    0.0%    0.0%  __madvise
+      1    0.0%    0.0%  __GI___pthread_mutex_unlock
+      1    0.0%    0.0%  _IO_fflush
+      1    0.0%    0.0%  _IO_do_write
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   5052   58.7%  /usr/bin/node
+   3850   76.2%    /usr/bin/node
+    987   25.6%      LazyCompile: ~handleWriteReq internal/stream_base_commons.js:47:24
+    987  100.0%        LazyCompile: ~writeGeneric internal/stream_base_commons.js:143:22
+    987  100.0%          LazyCompile: ~Socket._writeGeneric net.js:772:42
+    987  100.0%            LazyCompile: ~Socket._write net.js:809:35
+    543   14.1%      LazyCompile: ~stat internal/modules/cjs/loader.js:146:14
+    366   67.4%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+    363   99.2%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:368:23
+    313   86.2%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+     50   13.8%            LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+    177   32.6%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+    177  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+    177  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+    372    9.7%      LazyCompile: ~openSync fs.js:489:18
+    372  100.0%        LazyCompile: ~readFileSync fs.js:391:22
+    372  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+    360   96.8%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+     12    3.2%            LazyCompile: *Module._load internal/modules/cjs/loader.js:725:24
+    295    7.7%      LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:986:18
+    295  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+    295  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+    285   96.6%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+     10    3.4%            LazyCompile: *Module._load internal/modules/cjs/loader.js:725:24
+    203    5.3%      LazyCompile: ~read internal/modules/package_json_reader.js:16:14
+    114   56.2%        LazyCompile: *readPackage internal/modules/cjs/loader.js:258:21
+     52   45.6%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+     52  100.0%            LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+     28   24.6%          LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+     28  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+     25   21.9%          LazyCompile: *readPackageScope internal/modules/cjs/loader.js:289:26
+     25  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      9    7.9%          LazyCompile: ~resolveExports internal/modules/cjs/loader.js:440:24
+      9  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+     89   43.8%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:258:21
+     74   83.1%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+     39   52.7%            LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+     35   47.3%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+     13   14.6%          LazyCompile: ~resolveExports internal/modules/cjs/loader.js:440:24
+     13  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      2    2.2%          LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      2  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+     87    2.3%      LazyCompile: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/routes/info.js:7:35
+     68   78.2%        LazyCompile: *handle /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/layer.js:86:49
+     68  100.0%          LazyCompile: ~next /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/route.js:116:16
+     68  100.0%            LazyCompile: ~compression /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/compression/index.js:59:31
+     19   21.8%        LazyCompile: ~handle /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/layer.js:86:49
+     19  100.0%          LazyCompile: ~next /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/route.js:116:16
+     19  100.0%            LazyCompile: ~compression /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/compression/index.js:59:31
+     85    2.2%      /usr/bin/node
+     22   25.9%        LazyCompile: ~prepareStackTrace internal/errors.js:81:27
+     22  100.0%          /usr/bin/node
+     22  100.0%            LazyCompile: ~getErrorMessage /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/finalhandler/index.js:171:26
+      8    9.4%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:258:21
+      8  100.0%          LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      5   62.5%            LazyCompile: ~trySelf internal/modules/cjs/loader.js:409:17
+      3   37.5%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      7    8.2%        LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      7  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      7  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      4    4.7%        LazyCompile: ~stat internal/modules/cjs/loader.js:146:14
+      3   75.0%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      3  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1   25.0%          LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+      1  100.0%            LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:368:23
+      4    4.7%        LazyCompile: ~FastBuffer internal/buffer.js:957:14
+      4  100.0%          LazyCompile: ~createUnsafeBuffer buffer.js:153:28
+      4  100.0%            LazyCompile: ~allocate buffer.js:411:18
+      3    3.5%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      3  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      2   66.7%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1   33.3%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      2    2.4%        LazyCompile: ~expressInit /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/middleware/init.js:29:30
+      2  100.0%          LazyCompile: *trim_prefix /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:293:23
+      2  100.0%            LazyCompile: *next /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:177:16
+      1    1.2%        LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:986:18
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%        LazyCompile: ~u /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/cow.js:1:215
+      1  100.0%          LazyCompile: ~h /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/cow.js:1:388
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/cow.js:1:1
+      1    1.2%        LazyCompile: ~supportsColor /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/supports-color/index.js:44:23
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/supports-color/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%        LazyCompile: ~s /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ko/address/index.js:1:259
+      1  100.0%          LazyCompile: ~o /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ko/address/index.js:1:432
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ko/address/index.js:1:1
+      1    1.2%        LazyCompile: ~s /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/system/index.js:1:259
+      1  100.0%          LazyCompile: ~f /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/system/index.js:1:432
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/system/index.js:1:1
+      1    1.2%        LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%        LazyCompile: ~pathtoRegexp /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/path-to-regexp/index.js:28:22
+      1  100.0%          LazyCompile: ~Layer /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%            LazyCompile: ~route /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:502:29
+      1    1.2%        LazyCompile: ~path /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/socket.io/dist/index.js:145:9
+      1  100.0%          LazyCompile: ~Server /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/socket.io/dist/index.js:79:16
+      1  100.0%            LazyCompile: ~module.exports /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/socket.io/dist/index.js:738:18
+      1    1.2%        LazyCompile: ~parseAcceptEncoding /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/negotiator/lib/encoding.js:31:29
+      1  100.0%          LazyCompile: ~preferredEncodings /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/negotiator/lib/encoding.js:138:28
+      1  100.0%            LazyCompile: ~encodings /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/negotiator/index.js:52:52
+      1    1.2%        LazyCompile: ~parse url.js:170:37
+      1  100.0%          LazyCompile: ~urlParse url.js:154:18
+      1  100.0%            LazyCompile: ~validate_config /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1    1.2%        LazyCompile: ~o /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/index.js:1:432
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%        LazyCompile: ~match /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          LazyCompile: ~matchLayer /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:583:20
+      1  100.0%            LazyCompile: ~next /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:177:16
+      1    1.2%        LazyCompile: ~m /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/hy/phone_number/index.js:1:259
+      1  100.0%          LazyCompile: ~N /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/hy/phone_number/index.js:1:533
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/hy/phone_number/index.js:1:1
+      1    1.2%        LazyCompile: ~getColorDepth internal/tty.js:106:23
+      1  100.0%          LazyCompile: ~value internal/console/constructor.js:304:20
+      1  100.0%            LazyCompile: ~value internal/console/constructor.js:325:20
+      1    1.2%        LazyCompile: ~f /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/tr/color/index.js:1:259
+      1  100.0%          LazyCompile: ~C /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/tr/color/index.js:1:432
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/tr/color/index.js:1:1
+      1    1.2%        LazyCompile: ~f /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/index.js:1:259
+      1  100.0%          LazyCompile: ~r /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/index.js:1:432
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/index.js:1:1
+      1    1.2%        LazyCompile: ~f /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/address/index.js:1:259
+      1  100.0%          LazyCompile: ~o /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/address/index.js:1:432
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/address/index.js:1:1
+      1    1.2%        LazyCompile: ~f /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ja/name/index.js:1:259
+      1  100.0%          LazyCompile: ~t /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ja/name/index.js:1:432
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ja/name/index.js:1:1
+      1    1.2%        LazyCompile: ~f /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ar/index.js:1:259
+      1  100.0%          LazyCompile: ~m /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ar/index.js:1:432
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ar/index.js:1:1
+      1    1.2%        LazyCompile: ~exports.install /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/URL.js:83:19
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%        LazyCompile: ~e /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/index.js:1:265
+      1  100.0%          LazyCompile: ~r /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/index.js:1:441
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/index.js:1:1
+      1    1.2%        LazyCompile: ~createToken /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/semver/internal/re.js:11:21
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/semver/internal/re.js:1:1
+      1  100.0%            LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%        LazyCompile: ~createHtmlDocument /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/finalhandler/index.js:43:29
+      1  100.0%          LazyCompile: ~write /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/finalhandler/index.js:273:18
+      1  100.0%            LazyCompile: ~runInAsyncScope async_hooks.js:191:18
+      1    1.2%        LazyCompile: ~compressible /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/compressible/index.js:41:23
+      1  100.0%          LazyCompile: ~shouldCompress /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/compression/index.js:254:25
+      1  100.0%            LazyCompile: ~onResponseHeaders /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/compression/index.js:140:47
+      1    1.2%        LazyCompile: ~S /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/address/state.js:1:215
+      1  100.0%          LazyCompile: ~B /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/address/state.js:1:388
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/address/state.js:1:1
+      1    1.2%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1    1.2%        LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%          LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1  100.0%            LazyCompile: ~require internal/modules/cjs/helpers.js:100:31
+      1    1.2%        LazyCompile: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:23:36
+      1  100.0%          /usr/bin/node
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:1:1
+      1    1.2%        LazyCompile: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@colors/colors/lib/colors.js:99:43
+      1  100.0%          /usr/bin/node
+      1  100.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@colors/colors/lib/colors.js:96:23
+      1    1.2%        LazyCompile: *realpathSync fs.js:1723:22
+      1  100.0%          LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1    1.2%        LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1    1.2%        Eval: ~<anonymous> internal/crypto/keys.js:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:306:29
+      1    1.2%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/color/node_modules/color-convert/conversions.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/body-parser/node_modules/debug/src/node.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%        /usr/bin/node
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/vi/name/first_name.js:1:1
+      1  100.0%            LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+     67    1.7%      LazyCompile: ~readSync fs.js:579:18
+     37   55.2%        LazyCompile: ~tryReadSync fs.js:379:21
+     37  100.0%          LazyCompile: ~readFileSync fs.js:391:22
+     37  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+     30   44.8%        LazyCompile: *readFileSync fs.js:391:22
+     30  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+     26   86.7%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      4   13.3%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+     53    1.4%      LazyCompile: ~closeSync fs.js:456:19
+     52   98.1%        LazyCompile: ~closeSync /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/graceful-fs/graceful-fs.js:72:24
+     34   65.4%          LazyCompile: *readFileSync fs.js:391:22
+     33   97.1%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    2.9%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/saslprep/lib/memory-code-points.js:1:1
+     18   34.6%          LazyCompile: ~readFileSync fs.js:391:22
+     18  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.9%        LazyCompile: ~readFileSync fs.js:391:22
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+     45    1.2%      LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+     38   84.4%        LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:306:29
+      4   10.5%          Eval: ~<anonymous> tls.js:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      3    7.9%          Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      2    5.3%          LazyCompile: ~setupPrepareStackTrace internal/bootstrap/node.js:254:32
+      2  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      2    5.3%          Eval: ~<anonymous> internal/source_map/source_map_cache.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    5.3%          Eval: ~<anonymous> http.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    5.3%          Eval: ~<anonymous> events.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    5.3%          Eval: ~<anonymous> child_process.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          LazyCompile: ~setupProcessObject internal/bootstrap/node.js:273:28
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    2.6%          LazyCompile: ~setupBuffer internal/bootstrap/node.js:302:21
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    2.6%          Eval: ~<anonymous> tty.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/timers.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/streams/readable.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/process/esm_loader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/modules/package_json_reader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/modules/esm/resolve.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/modules/esm/module_map.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/modules/cjs/loader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/fs/promises.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/crypto/pbkdf2.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/child_process.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> internal/blob.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> fs.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> dns.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> crypto.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> cluster.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> buffer.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> assert.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    2.6%          Eval: ~<anonymous> _http_server.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      7   15.6%        LazyCompile: ~compileForPublicLoader internal/bootstrap/loaders.js:220:25
+      7  100.0%          LazyCompile: ~loadNativeModule internal/modules/cjs/helpers.js:43:26
+      7  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+    265    5.2%    LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+    265  100.0%      LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+    221   83.4%        LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+    221  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+    221  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+     44   16.6%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+     44  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+     44  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+
+   1480   17.2%  __xstat
+   1331   89.9%    LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+   1331  100.0%      LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+   1303   97.9%        LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+   1303  100.0%          LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+   1303  100.0%            LazyCompile: ~require internal/modules/cjs/helpers.js:100:31
+     28    2.1%        LazyCompile: *Module._load internal/modules/cjs/loader.js:725:24
+     28  100.0%          LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+     28  100.0%            LazyCompile: ~require internal/modules/cjs/helpers.js:100:31
+    149   10.1%    LazyCompile: *stat internal/modules/cjs/loader.js:146:14
+    126   84.6%      LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+    113   89.7%        LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:368:23
+     89   78.8%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+     84   94.4%            LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      5    5.6%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+     24   21.2%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+     24  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+     10    7.9%        LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+      8   80.0%          LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      8  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      2   20.0%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      2  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      3    2.4%        LazyCompile: ~finalizeEsmResolution internal/modules/cjs/loader.js:908:31
+      3  100.0%          LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      3  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+     23   15.4%      LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+     23  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+     23  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+     23  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+
+    800    9.3%  __lxstat
+    800  100.0%    LazyCompile: *realpathSync fs.js:1723:22
+    414   51.7%      LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+    414  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+    408   98.6%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+    408  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      6    1.4%          LazyCompile: *Module._load internal/modules/cjs/loader.js:725:24
+      6  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+    386   48.3%      LazyCompile: ~toRealPath internal/modules/cjs/loader.js:361:20
+    376   97.4%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+    363   96.5%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:368:23
+    247   68.0%            LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+    116   32.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+     10    2.7%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+      6   60.0%            LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      4   40.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      7    1.8%        LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      7  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      7  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+
+    380    4.4%  __libc_open
+    380  100.0%    LazyCompile: *readFileSync fs.js:391:22
+    378   99.5%      LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+    196   51.9%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+    196  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+    196  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+    182   48.1%        LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+    182  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+    182  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+
+    157    1.8%  __write
+     99   63.1%    /usr/bin/node
+      2    2.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/app.js:1:1
+      2  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      2  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      2  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      LazyCompile: ~z /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/it/address/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/it/address/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~y /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/address/city.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/address/city.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~wrapfunction /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/depd/index.js:413:23
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/request.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~w /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ro/address/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ro/address/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~v /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/address/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/address/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~u /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ur/address/street.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ur/address/street.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~send /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/finalhandler/index.js:272:15
+      1  100.0%        LazyCompile: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/finalhandler/index.js:86:19
+      1  100.0%          LazyCompile: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:640:19
+      1  100.0%            LazyCompile: ~next /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:177:16
+      1    1.0%      LazyCompile: ~proto.<computed> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:519:27
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/routes/login.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~promisify internal/util.js:317:19
+      1  100.0%        Eval: ~<anonymous> internal/fs/promises.js:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:306:29
+      1    1.0%      LazyCompile: ~n /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/hr/address/city.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/hr/address/city.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~maybeCacheSourceMap internal/source_map/source_map_cache.js:74:29
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      LazyCompile: ~m /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/company/descriptor.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/company/descriptor.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~l /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pl/company/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pl/company/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~h /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/az/name/male_last_name.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/az/name/male_last_name.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_CN/address/street_suffix.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_CN/address/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_CN/address/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/vi/company/name_patterns.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/vi/company/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/vi/company/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/street_address.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/date/index.js:1:368
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/address/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/address/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/internet/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/internet/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/mk/name/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/mk/name/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/name/name.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/name/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/name/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/company/index.js:1:368
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/it/name/name.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/it/name/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/it/name/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/hr/cell_phone/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/hr/cell_phone/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/address/street.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/address/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/address/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/lorem/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/lorem/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/es/address/default_country.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/es/address/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/es/address/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_BORK/lorem/index.js:1:368
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_BORK/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_BORK/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/word/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/word/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/music/genre.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/music/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/music/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/hacker/adjective.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/hacker/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/hacker/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/el/team/index.js:1:368
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/el/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/el/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/address/postcode.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/address/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/address/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/address/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/address/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/af_ZA/name/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/af_ZA/name/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~generate /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express-session/index.js:363:22
+      1  100.0%        LazyCompile: ~session /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express-session/index.js:179:26
+      1  100.0%          LazyCompile: ~handle /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:293:23
+      1    1.0%      LazyCompile: ~g /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/name/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/name/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~d /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pl/music/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pl/music/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~createDebug /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/debug/src/common.js:60:22
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mquery/lib/mquery.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~b /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_TW/address/city_prefix.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_TW/address/city_prefix.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~b /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ur/color/human.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ur/color/human.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~b /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/company/prefix.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/company/prefix.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~b /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/street_name.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/street_name.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~b /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/cell_phone/formats.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/cell_phone/formats.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~b /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de/cell_phone/formats.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de/cell_phone/formats.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~addListener events.js:496:58
+      1  100.0%        Eval: ~<anonymous> internal/bootstrap/switches/is_main_thread.js:1:1
+      1    1.0%      LazyCompile: ~_ /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ar/team/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ar/team/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~Y /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/faker.js:1:1341
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%        LazyCompile: ~executeUserEntryPoint internal/modules/run_main.js:68:31
+      1  100.0%          Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    1.0%      LazyCompile: ~M /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/name/first_name.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/name/first_name.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.0%      LazyCompile: ~Long.isLong /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/bson/lib/long.js:236:28
+      1  100.0%        LazyCompile: ~Long.equals /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/bson/lib/long.js:428:38
+      1  100.0%          LazyCompile: ~Long.eq /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/bson/lib/long.js:436:34
+      1  100.0%            LazyCompile: ~Long.negate /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/bson/lib/long.js:613:38
+      1    1.0%      LazyCompile: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/helpers/query/applyQueryMiddleware.js:34:41
+      1  100.0%        /usr/bin/node
+      1  100.0%          LazyCompile: ~Kareem.filter /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/kareem/index.js:435:35
+      1  100.0%            LazyCompile: ~applyQueryMiddleware /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/helpers/query/applyQueryMiddleware.js:27:30
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/winston/lib/winston.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongodb-connection-string-url/node_modules/whatwg-url/lib/percent-encoding.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_CN/phone_number/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/vi/internet/domain_suffix.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/phone_number/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/name/female_middle_name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/company/suffix.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/name/title.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/company/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/commerce/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sk/address/city.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ru/name/suffix.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ru/address/street_name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/name/prefix.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/date/weekday.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pl/science/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/address/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ne/phone_number/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/address/street_name.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/address/default_country.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/internet/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/lv/company/prefix.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ko/company/suffix.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/he/address/county.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/finance/currency.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/fr_CA/phone_number/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/fr/animal/cat.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/fi/name/first_name.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/fi/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_US/address/default_country.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_AU_ocker/address/city.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/address/city.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/name/name.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/company/bs_noun.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/address/country.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/el/internet/free_email.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/internet/domain_suffix.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/address/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/internet/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de/word/adverb.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/az/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/az/color/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ar/name/name.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.0%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ar/address/street.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+     24   15.3%    LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+     24  100.0%      LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+     15   62.5%        LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+     15  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+     15  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      9   37.5%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      9  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      9  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+
+    139    1.6%  __lll_lock_wait
+     11    7.9%    /usr/bin/node
+     11  100.0%      LazyCompile: ~writeGeneric internal/stream_base_commons.js:143:22
+     11  100.0%        LazyCompile: ~Socket._writeGeneric net.js:772:42
+     11  100.0%          LazyCompile: ~Socket._write net.js:809:35
+     11  100.0%            LazyCompile: ~writeOrBuffer internal/streams/writable.js:334:23
+
+    126    1.5%  /usr/lib/x86_64-linux-gnu/libc-2.31.so
+     85   67.5%    /usr/bin/node
+     10   11.8%      LazyCompile: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/routes/info.js:7:35
+      8   80.0%        LazyCompile: *handle /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/layer.js:86:49
+      8  100.0%          LazyCompile: ~next /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/route.js:116:16
+      8  100.0%            LazyCompile: ~compression /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/compression/index.js:59:31
+      2   20.0%        LazyCompile: ~handle /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%          LazyCompile: ~next /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/route.js:116:16
+      2  100.0%            LazyCompile: ~compression /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/compression/index.js:59:31
+      8    9.4%      /usr/bin/node
+      2   25.0%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:258:21
+      2  100.0%          LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      1   50.0%            LazyCompile: ~trySelf internal/modules/cjs/loader.js:409:17
+      1   50.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1   12.5%        LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      1  100.0%          LazyCompile: ~trySelf internal/modules/cjs/loader.js:409:17
+      1  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1   12.5%        LazyCompile: ~createHtmlDocument /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/finalhandler/index.js:43:29
+      1  100.0%          LazyCompile: ~write /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/finalhandler/index.js:273:18
+      1  100.0%            LazyCompile: ~runInAsyncScope async_hooks.js:191:18
+      1   12.5%        LazyCompile: ~clearBuffer internal/streams/writable.js:493:21
+      1  100.0%          LazyCompile: ~Writable.uncork internal/streams/writable.js:310:37
+      1  100.0%            LazyCompile: ~end _http_outgoing.js:795:45
+      1   12.5%        LazyCompile: ~FastBuffer internal/buffer.js:957:14
+      1  100.0%          LazyCompile: ~createUnsafeBuffer buffer.js:153:28
+      1  100.0%            LazyCompile: ~allocate buffer.js:411:18
+      1   12.5%        LazyCompile: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/helpers/pluralize.js:86:34
+      1  100.0%          /usr/bin/node
+      1  100.0%            LazyCompile: ~pluralize /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/helpers/pluralize.js:82:19
+      1   12.5%        LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      6    7.1%      LazyCompile: *readPackage internal/modules/cjs/loader.js:258:21
+      4   66.7%        LazyCompile: *readPackageScope internal/modules/cjs/loader.js:289:26
+      2   50.0%          LazyCompile: ~trySelf internal/modules/cjs/loader.js:409:17
+      2  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      2   50.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      2  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1   16.7%        LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1   16.7%        LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      5    5.9%      LazyCompile: *realpathSync fs.js:1723:22
+      4   80.0%        LazyCompile: ~toRealPath internal/modules/cjs/loader.js:361:20
+      4  100.0%          LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+      4  100.0%            LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:368:23
+      1   20.0%        LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      3    3.5%      LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      3  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      3  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      3  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      2    2.4%      LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      2  100.0%        LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      2  100.0%          LazyCompile: ~require internal/modules/cjs/helpers.js:100:31
+      1   50.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/schema/date.js:1:1
+      1   50.0%            Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/internet/index.js:1:1
+      2    2.4%      LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      2  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      2  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      2  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1    1.2%      LazyCompile: ~x /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/el/finance/credit_card/discover.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/el/finance/credit_card/discover.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~writeGeneric internal/stream_base_commons.js:143:22
+      1  100.0%        LazyCompile: ~Socket._writeGeneric net.js:772:42
+      1  100.0%          LazyCompile: ~Socket._write net.js:809:35
+      1  100.0%            LazyCompile: ~writeOrBuffer internal/streams/writable.js:334:23
+      1    1.2%      LazyCompile: ~store.generate /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express-session/index.js:158:28
+      1  100.0%        LazyCompile: ~generate /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express-session/index.js:363:22
+      1  100.0%          LazyCompile: ~session /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express-session/index.js:179:26
+      1  100.0%            LazyCompile: *trim_prefix /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express/lib/router/index.js:293:23
+      1    1.2%      LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      1  100.0%        LazyCompile: ~trySelf internal/modules/cjs/loader.js:409:17
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1    1.2%      LazyCompile: ~processImmediate internal/timers.js:421:28
+      1    1.2%      LazyCompile: ~n /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sk/name/prefix.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sk/name/prefix.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~i /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_ZA/internet/domain_suffix.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_ZA/internet/domain_suffix.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_TW/phone_number/formats.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_TW/phone_number/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_TW/phone_number/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ro/name/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ro/name/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ro/address/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ro/address/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/date/month.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/date/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/date/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/phone_number/formats.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/phone_number/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/phone_number/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nl/hacker/verb.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nl/hacker/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nl/hacker/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/it/address/street_address.js:1:324
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/it/address/index.js:1:368
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/it/address/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/address/index.js:1:368
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/address/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/de/index.js:1:368
+      1  100.0%        LazyCompile: ~get /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/index.js:1:376
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%      LazyCompile: ~g /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/name/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/name/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~deprecated internal/util.js:103:22
+      1  100.0%        LazyCompile: ~Mongoose.connect /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/index.js:408:38
+      1  100.0%          Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/app.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%      LazyCompile: ~createHash crypto.js:113:20
+      1  100.0%        LazyCompile: ~hash /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express-session/index.js:596:14
+      1  100.0%          LazyCompile: ~generate /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express-session/index.js:363:22
+      1  100.0%            LazyCompile: ~session /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/express-session/index.js:179:26
+      1    1.2%      LazyCompile: ~b /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/city_prefix.js:1:388
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/city_prefix.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~Schema.plugin /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/schema.js:1796:35
+      1  100.0%        LazyCompile: ~applyPlugins /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/helpers/schema/applyPlugins.js:3:39
+      1  100.0%          LazyCompile: ~Mongoose._applyPlugins /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/index.js:719:44
+      1  100.0%            LazyCompile: ~Mongoose.model /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/index.js:546:36
+      1    1.2%      LazyCompile: ~Schema.interpretAsType /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/schema.js:1162:44
+      1  100.0%        LazyCompile: ~Schema.path /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/schema.js:894:33
+      1  100.0%          LazyCompile: ~add /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/schema.js:580:36
+      1  100.0%            LazyCompile: ~compile /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/model.js:5014:33
+      1    1.2%      LazyCompile: ~N /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_GB/phone_number/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_GB/phone_number/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~Module._resolveLookupPaths internal/modules/cjs/loader.js:635:38
+      1  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1    1.2%      LazyCompile: ~Module._extensions..json internal/modules/cjs/loader.js:1119:39
+      1  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1    1.2%      LazyCompile: ~I /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ru/internet/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/ru/internet/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~D /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/color/index.js:1:533
+      1  100.0%        Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/color/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~<anonymous> internal/fs/utils.js:345:35
+      1  100.0%        LazyCompile: ~<anonymous> internal/fs/utils.js:650:38
+      1  100.0%          LazyCompile: *readFileSync fs.js:391:22
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/model.js:1470:52
+      1  100.0%        LazyCompile: ~promiseOrCallback /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%          LazyCompile: ~Mongoose._promiseOrCallback /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/index.js:1269:49
+      1  100.0%            LazyCompile: ~createCollection /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/mongoose/lib/model.js:1421:51
+      1    1.2%      LazyCompile: *stat internal/modules/cjs/loader.js:146:14
+      1  100.0%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+      1  100.0%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:368:23
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      1    1.2%      LazyCompile: *splitRoot fs.js:1686:33
+      1  100.0%        LazyCompile: *realpathSync fs.js:1723:22
+      1  100.0%          LazyCompile: ~toRealPath internal/modules/cjs/loader.js:361:20
+      1  100.0%            LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+      1    1.2%      LazyCompile: *readPackageScope internal/modules/cjs/loader.js:289:26
+      1  100.0%        LazyCompile: ~trySelf internal/modules/cjs/loader.js:409:17
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1    1.2%      LazyCompile: *normalizeString path.js:59:25
+      1  100.0%        LazyCompile: *realpathSync fs.js:1723:22
+      1  100.0%          LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1    1.2%      LazyCompile: *Module._nodeModulePaths internal/modules/cjs/loader.js:597:37
+      1  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/npmlog/log.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/bson/lib/objectid.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/zh_CN/name/male_first_name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/vi/date/month.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/vi/address/city_name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/tr/phone_number/area_code.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/sv/team/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/commerce/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/mk/name/last_name.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/fa/commerce/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_ZA/company/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en_NG/name/first_name.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/en/system/mimeTypes.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /mnt/c/Users/carlo/OneDrive/Documents/JS-Basic/Challenge_14/node_modules/@faker-js/faker/dist/cjs/locales/cz/name/female_first_name.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+     14   11.1%    LazyCompile: *Module._compile internal/modules/cjs/loader.js:1039:37
+     14  100.0%      LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+     10   71.4%        LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+     10  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+     10  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      4   28.6%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      4  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      4  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      3    2.4%    LazyCompile: *readFileSync fs.js:391:22
+      3  100.0%      LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      2   66.7%        LazyCompile: *Module.load internal/modules/cjs/loader.js:938:33
+      2  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      2  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1   33.3%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      2    1.6%    LazyCompile: *realpathSync fs.js:1723:22
+      1   50.0%      LazyCompile: ~toRealPath internal/modules/cjs/loader.js:361:20
+      1  100.0%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+      1  100.0%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:368:23
+      1  100.0%            LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+      1   50.0%      LazyCompile: *Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+
